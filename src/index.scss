@@ -1,0 +1,65 @@
+$primary: #DA7B36;
+$secondary: #88159B;
+$terciary: #F3AD9B;
+
+$bg-white: #F9EED8;
+$white: #FCF4E7;
+$black: #1E1E1E;
+
+@font-face {
+  font-family: 'PixelOperator';
+  src: local('PixelOperator'), url('../assets/fonts/PixelOperator.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'PixelOperatorSC';
+  src: 
+    local('PixelOperatorSC'),
+    url('../assets/fonts/PixelOperatorSC.ttf') format('ttf'),
+    url('../assets/fonts/PixelOperatorSC-Bold.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+  background-color: $bg-white;
+  font-family: PixelOperator;
+  color: $black ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+
+h1 {
+  font-family: PixelOperatorSC;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.75em;
+  font-weight: normal;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  font-size: 1.35em;
+  font-weight: normal;
+  margin: 0;
+}

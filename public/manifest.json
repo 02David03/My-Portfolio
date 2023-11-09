@@ -1,0 +1,9 @@
+{
+  "short_name": "Portfolio",
+  "name": "David's Portfolio",
+  "description": "That's my humble Portfolio, here you'll find infos about me, don't forget to go for a chat with me if you're interested",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F9EED8"
+}
