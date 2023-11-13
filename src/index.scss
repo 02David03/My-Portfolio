@@ -12,15 +12,15 @@ $black: #1E1E1E;
 
 @font-face {
   font-family: 'PixelOperator';
-  src: local('PixelOperator'), url('../assets/fonts/PixelOperator.ttf') format('ttf');
+  src: local('PixelOperator'), url('./assets/fonts/PixelOperator.ttf') format('ttf');
 }
 
 @font-face {
   font-family: 'PixelOperatorSC';
   src: 
     local('PixelOperatorSC'),
-    url('../assets/fonts/PixelOperatorSC.ttf') format('ttf'),
-    url('../assets/fonts/PixelOperatorSC-Bold.ttf') format('ttf');
+    url('./assets/fonts/PixelOperatorSC.ttf') format('ttf'),
+    url('./assets/fonts/PixelOperatorSC-Bold.ttf') format('ttf');
 }
 
 body {

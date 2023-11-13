@@ -1,0 +1,13 @@
+.animated-border {
+  animation: lightPass 10s ease-out infinite;
+}
+
+@keyframes lightPass {
+  from {
+    background-position:left bottom;
+  }
+
+  to {
+    background-position:right top;
+  }
+}
