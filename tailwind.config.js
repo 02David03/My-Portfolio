@@ -10,10 +10,6 @@ module.exports = {
       'secondary': '#88159B',
       'terciary': '#F3AD9B'
     },
-    borderWidth: {
-      '16': '16px',
-      '24': '24px',
-    },
     extend: {},
   },
   plugins: [],
