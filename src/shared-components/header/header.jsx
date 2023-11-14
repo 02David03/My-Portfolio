@@ -8,11 +8,11 @@ function Header() {
 
   useEffect(() => {
     const navAnimation = async () => {
-      await animateNav('#line', {x: [400, -350, 0], scaleX: [0.8, 0.4, 1 ]}, {duration: 1});
-      await animateNav('#links', {opacity: [0, 1]}, {duration: 0.7});
+      await animateNav('#line', {x: [600, -350, 150, 0], scaleX: [0.4, 0.3, 0.4, 1 ]}, {duration: 1.5});
+      await animateNav('#links', {opacity: [0, 1]}, {duration: 0.5});
     }
-    const animationNav = navAnimation().catch(console.error);
 
+    navAnimation().catch(console.error);
   },[]);
 
   return(
