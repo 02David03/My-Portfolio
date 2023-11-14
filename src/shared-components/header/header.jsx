@@ -1,9 +1,19 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion, useAnimate } from "framer-motion";
+import { useState, useEffect } from "react";
 
 function Header() {
   const [x, setX] = useState(0);
   const [scaleX, setScaleX] = useState(1);
+  const [nav, animateNav] = useAnimate();
+
+  useEffect(() => {
+    const navAnimation = async () => {
+      await animateNav('#line', {x: [450, -150, 0]}, {duration: 0.8});
+      await animateNav('#links', {opacity: [0, 1]}, {duration: 0.5});
+    }
+    const animationNav = navAnimation().catch(console.error);
+
+  },[]);
 
   return(
     <header className="bg-black flex justify-center">
@@ -11,8 +21,8 @@ function Header() {
         <a href="#" className="rounded-full bg-white px-2 cursor-pointer">
           <h2 className="text-black"> D.A </h2>
         </a>
-        <nav className="flex flex-col items-end gap-1">
-          <div className="text-primary text-4xl flex gap-6">
+        <nav ref={nav} className="flex flex-col items-end gap-1">
+          <div id="links" className="text-primary text-4xl flex gap-6 opacity-0">
             <a className="hover:font-bold" 
               onMouseEnter={() => {setScaleX(0.5); setX(-70) }}
               onMouseLeave={() => {setScaleX(1); setX(0)}}
@@ -22,7 +32,7 @@ function Header() {
               onMouseLeave={() => {setScaleX(1); setX(0)}}
               href="#"> Portfolio </a>
           </div>
-          <motion.div 
+          <motion.div id='line'
             className="flex w-80 h-1 bg-primary rounded"
             animate={{x, scaleX}}
             transition={{ type: 'spring' }}
