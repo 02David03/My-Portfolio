@@ -24,12 +24,12 @@ function Welcome() {
         id='myPhoto'
         className='rounded-md absolute top-56 left-96 w-1/5 p-2 z-0'
         animate={{
-          rotateZ: [2, -2],
+          rotateZ: [1, -1],
           x:[3,-3],
           y:[3,-3],
           backgroundColor: ["#DA7B36", "#1E1E1E", "#DA7B36"] 
         }}
-        transition={{ease: 'easeInOut', type:'tween', duration: 3, repeatType:'reverse', repeat: Infinity}}
+        transition={{ease: 'easeInOut', type:'tween', duration: 2.5, repeatType:'reverse', repeat: Infinity}}
       >
         <img src={MyPhoto} alt="Me" />
       </motion.div>
