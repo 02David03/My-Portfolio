@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 function Header() {
   const [x, setX] = useState(0);
   const [scaleX, setScaleX] = useState(1);
-  const [nav, animateNav] = useAnimate();
+  const [nav, animateNav] = useAnimate('spring');
 
   useEffect(() => {
     const navAnimation = async () => {
-      await animateNav('#line', {x: [450, -150, 0]}, {duration: 0.8});
-      await animateNav('#links', {opacity: [0, 1]}, {duration: 0.5});
+      await animateNav('#line', {x: [400, -350, 0], scaleX: [0.8, 0.4, 1 ]}, {duration: 1});
+      await animateNav('#links', {opacity: [0, 1]}, {duration: 0.7});
     }
     const animationNav = navAnimation().catch(console.error);
 
