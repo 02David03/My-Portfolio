@@ -16,7 +16,6 @@ const AnimatedTextWord = ({ text, delay, className }) => {
   const child = {
     visible: {
       x:[20, 0],
-      y:[10, 0],
       opacity: 1,
     },
   };
