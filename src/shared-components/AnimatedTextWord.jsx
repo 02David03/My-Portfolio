@@ -1,10 +1,7 @@
-import { motion, useAnimate } from "framer-motion";
-import { useEffect } from "react";
+import { motion   } from "framer-motion";
 
 const AnimatedTextWord = ({ text, delay, className }) => {
-  const [textRef, animateText] = useAnimate();
   const words = text.split(" ");
-
 
   const container = {
     visible: (i = 1) => ({
@@ -22,7 +19,6 @@ const AnimatedTextWord = ({ text, delay, className }) => {
 
   return (
     <motion.div
-      ref={textRef}
       className={`${className} flex flex-wrap opacity-0`}
       variants={container}
       initial="hidden"
