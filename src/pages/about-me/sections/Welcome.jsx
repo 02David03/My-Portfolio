@@ -8,7 +8,6 @@ import FilledCircle from '../../../assets/icons/filled_circle.svg'
 function Welcome() {
   const [welcome, animateWelcome] = useAnimate();
 
-
   useEffect(() => {
     const startAnimations = async () => {
       await animateWelcome('#myPhoto', {x:['-50vw', '0vw']}, {duration:1, type:'spring'})
