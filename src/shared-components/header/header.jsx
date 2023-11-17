@@ -16,17 +16,17 @@ function Header() {
   },[]);
 
   return(
-    <header className="bg-black flex justify-center">
+    <header className="bg-black flex justify-center fixed w-full top-0 z-50">
       <div className="container flex justify-between items-center py-2">
-        <a href="#" className="rounded-full bg-white px-2 cursor-pointer">
+        <a href="#Welcome" className="rounded-full bg-white px-2 cursor-pointer">
           <h2 className="text-black"> D.A </h2>
         </a>
-        <nav ref={nav} className="flex flex-col items-end gap-1">
+        <nav ref={nav} className="flex flex-col items-end scroll-smooth gap-1">
           <div id="links" className="text-primary text-4xl flex gap-6 opacity-0">
             <a className="hover:font-bold" 
               onMouseEnter={() => {setScaleX(0.5); setX(-70) }}
               onMouseLeave={() => {setScaleX(1); setX(0)}}
-              href="#"> About me </a>
+              href="#Welcome"> About me </a>
             <a className="hover:font-bold" 
               onMouseEnter={() => {setScaleX(0.5); setX(100) }}
               onMouseLeave={() => {setScaleX(1); setX(0)}}
