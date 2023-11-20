@@ -18,13 +18,13 @@ function Welcome() {
       await animateWelcome('#top-decoration img[alt=circle-3]', {scale: [0, 1.1, 1], opacity: 1 }, {duration: 0.3});
     }
 
-    startAnimations().catch(console.error);
+    startAnimations().catch(console.error); 
   },[]);
 
   return (
     <div ref={welcome} className='flex items-center justify-center h-auto md:h-full'>
       <div className='w-auto flex lg:justify-start justify-center'>
-        <div className='absolute top-40 lg:top-56 w-80 lg:w-96 hidden lg:block z-0'>
+        <div className='absolute top-40 lg:top-40 w-80 lg:w-96 hidden lg:block z-0'>
           <MyPicture />
         </div>
 
@@ -32,9 +32,9 @@ function Welcome() {
         bg-white border-4 opacity-0 border-black shadow-[16px_16px_1px_#1E1E1E] rounded-lg text-right'> 
           <div id='top-decoration' className='flex items-center justify-around'>
             <div id='line' className='flex bg-black w-9/12 rounded h-1 opacity-0'></div>
-            <img className='w-10 w-6 lg:w-auto opacity-0 ms-4' src={Circle} alt="circle-1" />
-            <img className='w-10 w-6 lg:w-auto opacity-0' src={Circle} alt="circle-2" />
-            <img className='w-10 w-6 lg:w-auto opacity-0' src={FilledCircle} alt="circle-3" />  
+            <img className='w-6 sm:w-8 lg:w-10 opacity-0 ms-4' src={Circle} alt="circle-1" />
+            <img className='w-6 sm:w-8 lg:w-10 opacity-0' src={Circle} alt="circle-2" />
+            <img className='w-6 sm:w-8 lg:w-10 opacity-0' src={FilledCircle} alt="circle-3" />  
           </div>
           <div className='ml-2'>
             <AnimatedTextWord text={'Greetings Traveller :D'} delay={3.8} className='text-4xl lg:text-5xl font-semibold black justify-end mt-1 mb-4' />
