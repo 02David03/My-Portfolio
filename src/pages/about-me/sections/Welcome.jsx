@@ -22,13 +22,13 @@ function Welcome() {
   },[]);
 
   return (
-    <div ref={welcome} className='flex items-center justify-center h-auto md:h-full'>
-      <div className='w-auto flex lg:justify-start justify-center'>
+    <div ref={welcome} className='flex items-center justify-center h-full'>
+      <div className='w-auto flex justify-start '>
         <div className='absolute top-40 lg:top-40 w-80 lg:w-96 hidden lg:block z-0'>
           <MyPicture />
         </div>
 
-        <div id='welcomeMsg' className='flex flex-col md:mx-auto md:mt-0 mt-40 mx-6 w-auto md:w-11/12 lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl lg:ml-80 py-4 px-4 md:py-6 md:px-8 z-10
+        <div id='welcomeMsg' className='flex flex-col mx-6 mt-auto w-auto md:w-11/12 lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl lg:ml-80 py-4 px-4 md:py-6 md:px-8 z-10
         bg-white border-4 opacity-0 border-black shadow-[16px_16px_1px_#1E1E1E] rounded-lg text-right'> 
           <div id='top-decoration' className='flex items-center justify-around'>
             <div id='line' className='flex bg-black w-9/12 rounded h-1 opacity-0'></div>

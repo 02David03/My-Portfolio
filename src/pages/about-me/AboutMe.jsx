@@ -1,6 +1,7 @@
 import Welcome from "./sections/Welcome";
 import Skills from "./sections/Skills";
 import {SectionsContainer, Section} from "react-fullpage";
+import './about-me.scss';
 
 function AboutMe() {
   const sectionOptions = {
